@@ -1,0 +1,372 @@
+/* google font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* ========================================== */
+root{
+    --verde-oscuro:#066840;
+    --verde-claro:#5DA576;
+    --azul-:#1A5C6E;
+    --body--font:'Poppins',sans-serif;
+ 
+ }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+}
+
+html{
+    scroll-behavior: smooth
+}
+
+body{
+    height: 90vh;
+    background-color: aliceblue;
+    font-family: var(--body--font);
+    background-image: url(imagen/fotbilista-cirlulos-verde.png);
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position-x: 15%;
+    background-position-y: 70PX;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: var(--verde-oscuro)
+    
+}
+
+/* ::::::::header::::::::::: */
+
+header{
+    background-color: #5DA576;
+    position: relative;
+    /* padding:  2rem; */
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+ /*    max-width: 1200px; */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+.navbar .logo {
+    height: 80px;
+    width: 250px;
+    background-color: #1A5C6E;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    
+}
+
+.navbar .logo img {
+    width: 200px;
+    height: auto;
+    filter: invert();
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+
+.links i {
+    color: #fff;
+    padding: 10px 10px;
+    background: #1A5C6E;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+.navbar .toggle_btn {
+    width: 3rem;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.contenedor__registro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+}
+
+.action_btn {
+    
+    background-color: #066840;
+    padding: 0.8rem 2rem;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+
+
+.action_btn:hover {
+    scale: 1.05;
+    color: #fff;
+} 
+
+.action_btn:active {
+    scale: 0.95;
+}
+
+
+
+/*:::::::::: dropdoen menu::::::::: */
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 80px;
+    height: 0px;
+    width: 300px;
+    background: #5DA576;
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 2;
+}
+
+.dropdown_menu.open {
+    height: 210px;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown_menu .action_btn {
+    width: 90%;
+    padding: 0.7rem;
+    display: flex;
+    justify-content: center;
+    background-color: #1A5C6E;
+}
+
+
+
+/* :::::::::::::::::::::::: main ::::::::::::::::::::::::::: */
+
+main{
+    height: 84vh;
+   
+}
+
+
+.login__container{
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+    /* flex-direction: row; */
+    height: 84vh;
+    padding: 70px 90px;
+       
+}
+
+
+.login__general{
+    position: relative;
+    height: 520px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: #fff solid 3px;
+    box-shadow: #1A5C6E;
+    background-color: #fff;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.233);
+    border-radius: 15px;
+    overflow: hidden;
+    /* z-index: -1; */
+}
+
+.login__img{
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+.login__img img{
+    max-width: 80%;
+    padding: 20px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    
+}
+
+.login1{
+    height: 50%;
+    background: linear-gradient(to top,#5DA576,#1A5C6E);
+    
+}
+
+.login2{
+    height: 50%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+
+}
+
+.login2 h1{
+    color: #066840;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 16px;
+}
+
+.login2 h2{
+    font-family: var(--body--font);
+    font-size: 15px;    
+    font-weight: 300;
+}
+
+.login-formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.login-formulario a{
+    color: #1A5C6E;
+}
+
+.login-formulario input{
+    background-color: #5DA576;
+    width: 80%;
+    color: #fff;
+    font-family: var(--body--font);
+    border-radius: 5px;
+    border: 2px solid #066840;
+    padding: 10px 16px;
+    transition: all 0.375s;
+    
+}
+
+.login-formulario button{
+    color: aliceblue;
+    font-size: 18px;
+    background: #066840;
+    padding: 5px 38px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.login-formulario button:hover{
+    scale: 1.05;
+    color: #fff;
+}
+
+.login-formulario input::placeholder {
+    color: aliceblue;
+    text-align: center;
+    
+}
+
+.login-formulario input:focus{
+    outline:none;
+    transform: scale(1.05);
+    transition: all 0.2;
+}
+
+
+/* <<<<<<<<<<<<<<<<<<< FOOTER >>>>>>>>>>>>>>> */
+
+.footer__negro{
+    color: #fff;
+    width: 100%;
+    height: 8vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/* ;;;;;;;; Responcive dising ::::::::::::: */
+
+
+@media(max-width: 992px){
+    .navbar .links,
+    .navbar .action_btn {
+        display: none;
+    }
+    
+    .navbar .toggle_btn{
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+
+    .login__general{
+        right: 0;
+    }
+}
+
+@media( max-width: 600px) {
+
+    .dropdown_menu.open{
+        width: 100%;
+        right: 0;
+    }
+    .navbar {
+        height: 80px;
+        width: 100%;
+        background-color: #1A5C6E;
+        display: flex;
+        align-items: center;    
+        justify-content: space-between;
+             
+    }
+    
+    .login__container{
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 40px;
+    }
+
+   
+    
+   
+   
+    
+}

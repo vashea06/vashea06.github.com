@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing tjc</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="#">
+                <img src="imagen/logo-color--negro.png" alt="logo tjc"></a>
+            </div>
+                <ul class="links">
+                    <li>
+                        <i class="fa-regular fa-chess-knight"></i>
+                        <a href="#Americanas">Americanas</a>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-futbol"></i>
+                        <a href="#Deportes">Deportes</a></li>
+                    <li>
+                        <i class="fa-regular fa-clipboard"></i>
+                        <a href="#Quiniela">Quiniela</a>
+                    </li>
+                </ul>
+            <div class="contenedor__registro">
+                <a href="#" class="action_btn">Registro</a>
+            </div>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>    
+        </nav>
+
+        <div class="dropdown_menu">
+            <li><a href="#Americanas">Americanas</a></li>
+            <li><a href="#Carreras">Carreras</a></li>
+            <li><a href="#Deportes">Deportes</a></li>
+            <li><a href="#" class="action_btn">Registro</a></li>
+        </div>
+    </header>
+    <main>
+        
+        <!-- <div class="ciculo__decoracion"></div>
+        <div class="puntos__decoracion">
+            ........
+            ........
+            ........
+        </div> -->
+        <aside class="login__container">
+            <div class="login__general">
+              <div class="login1">
+                  <div class="login__img">
+                      <img src="imagen/logo-color--negro.png" alt="">
+                  </div>
+              </div>
+              <div class="login2">
+                  <h1>Iniciar Sesión</h1>
+                                  
+                  <form action="" class="login-formulario">
+                      <input type="text" placeholder="Usuario">
+                      <input type="password" placeholder="Contreseña">
+                      <a href="#">Recuperar Contraseña</a>
+                      <button type="submit">Entrar</button>
+                  </form>
+                  
+              </div>
+            </div>
+          </aside>
+        
+    </main>
+    <footer>
+        <div class="footer__negro">
+        ©2023 TODOS LOS DERECHOS RESERVADOS
+        </div>
+    </footer>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+
+    </script>
+
+</body>
+</html>
